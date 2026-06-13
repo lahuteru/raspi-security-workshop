@@ -3,6 +3,7 @@
 # ここを変えるときは必ずメンバーに連絡すること
 
 # Slack
+#ダミーです。実際には自分のワークスペースのWebhook URLを入れてください。
 SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/xxx/yyy/zzz"
 
 # 顔認識

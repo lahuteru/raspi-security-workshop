@@ -1,7 +1,7 @@
 # インターフェース仕様書
 
-**最終更新：2025-01-XX**  
-**担当：PM**
+**最終更新：2025-06-13**  
+**担当：メンバーで編集
 
 ---
 
@@ -44,15 +44,15 @@ result = {
 
 ## 🔄 メインの流れ
 
-メインループはPM(あなた)が管理する。
+メインループはAPI・テストが管理する。
 
 ```python
-result = recognize_face(frame)      # ① AIリード
-log_event(result)                   # ② メンバーC
+result = recognize_face(frame)      # ① 画像AI
+log_event(result)                   # ② 通知・ログ
 
 if result["status"] == "unknown":
-    notify_slack(result)            # ③ PM(あなた)
-    led_blink(duration=5, frequency=20)  # ④ HWリード
+    notify_slack(result)            # ③ API・テスト
+    led_blink(duration=5, frequency=20)  # ④ HW
 ```
 
 ---
@@ -60,11 +60,11 @@ if result["status"] == "unknown":
 ## ⚠️ ルール
 
 - 関数名・引数は勝手に変えない
-- 変更したいときはPMに一言連絡
+- 変更したいときはメンバーに一言連絡
 - この仕様を変更する場合は必ず全員に通知
 
 ## 変更履歴
 
 | 日付 | 変更内容 | 担当者 |
 |------|---------|--------|
-| 2025-01-XX | 初版作成 | PM |
+| 2025-06-13 | 初版作成 | メンバーＤ |
